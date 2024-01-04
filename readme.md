@@ -1,0 +1,1 @@
+## very simple flat website with pure css
