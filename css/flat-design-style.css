@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html::-webkit-scrollbar {
   width: 12px;
 }
@@ -10,14 +18,6 @@ html::-webkit-scrollbar-track {
   background-color: #6E717B;
 }
 
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 html {
   line-height: 1.15;
   font-family: sans-serif;
@@ -27,7 +27,7 @@ html {
 
 body {
   margin: 0;
-  font-family: roboto,sans-serif;
+  font-family: roboto, sans-serif;
   line-height: 1.5;
   font-size: 1rem;
 }
@@ -37,11 +37,22 @@ a {
   cursor: pointer;
 }
 
-nav, section, header, footer { display: block; }
+nav,
+section,
+header,
+footer {
+  display: block;
+}
 
-h1, h2, h3, p { margin-top: 0; }
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
 
-h2, h3 {
+h2,
+h3 {
   text-align: center;
 }
 
@@ -66,7 +77,6 @@ img {
   vertical-align: middle;
   text-align: center;
   color: #fff;
-  border: none;
   border: 1px solid transparent;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -79,13 +89,13 @@ img {
 /*********************
         Nav
  ********************/
- nav {
+nav {
   overflow: hidden;
- }
+}
 
- .right-menue {
+.right-menue {
   float: right;
- }
+}
 
 .right-menue-link {
   display: inline-block;
@@ -116,6 +126,7 @@ img {
     padding: 5px 10px;
   }
 }
+
 /*********************
         /nav
  ********************/
@@ -158,7 +169,7 @@ header {
         /Header
  ********************/
 
- /*********************
+/*********************
         ABOUT US
  ********************/
 .about-us {
@@ -177,7 +188,8 @@ header {
 .about-us a:hover {
   color: #269a83;
 }
- /*********************
+
+/*********************
         /ABOUT US
  ********************/
 
@@ -216,11 +228,12 @@ header {
   max-width: 200px;
   height: auto;
 }
+
 /*********************
         /FREEBIES
  ********************/
 
- /*********************
+/*********************
         CLIENTS
  ********************/
 .clients {
@@ -243,8 +256,9 @@ header {
   max-width: 150px;
   height: 100px;
   -webkit-filter: saturate(0);
-        filter: saturate(0);
+  filter: saturate(0);
 }
+
 /*********************
         /CLIENTS
  ********************/
@@ -339,7 +353,7 @@ textarea {
 }
 
 @media screen and (max-width: 240px) {
-  .form-content p{
+  .form-content p {
     font-size: 1.5rem;
   }
 
@@ -353,11 +367,12 @@ textarea {
     margin-top: 15px;
   }
 }
+
 /*********************
       /Contact-Us
  ********************/
 
- /*********************
+/*********************
       Footer
  ********************/
 footer {
@@ -375,7 +390,7 @@ footer .logo {
   font-size: 20px;
 }
 
-.social-icons img{
+.social-icons img {
   margin-left: 15px;
   margin-top: 10px;
   width: 40px;
@@ -383,23 +398,24 @@ footer .logo {
 }
 
 .social-icons img:hover {
-    -webkit-filter: saturate(0);
-            filter: saturate(0);
+  -webkit-filter: saturate(0);
+  filter: saturate(0);
 }
- /*********************
+
+/*********************
       /Footer
  ********************/
 .arrow {
   border: solid #262626;
-  border-width: 0 8px 8px 0;
+  border-width: 0 6px 6px 0;
   -webkit-transform: rotate(-135deg);
-     -moz-transform: rotate(-135deg);
-      -ms-transform: rotate(-135deg);
-       -o-transform: rotate(-135deg);
-          transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
   position: fixed;
   right: 25px;
-  padding: 15px;
+  padding: 8px;
   bottom: 15px;
   font-size: 20px;
   color: #000;
@@ -407,7 +423,7 @@ footer .logo {
 
 @media screen and (max-width: 220px) {
   h1 {
-    font-size: 1.5rem;    
+    font-size: 1.5rem;
   }
 
   h2 {
@@ -417,7 +433,7 @@ footer .logo {
 
 @media screen and (max-width: 170px) {
   h1 {
-    font-size: 1.2rem;    
+    font-size: 1.2rem;
   }
 
   h2 {
